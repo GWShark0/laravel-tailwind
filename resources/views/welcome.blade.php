@@ -4,17 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Example Laravel Page</title>
+        <title>Laravel Tailwind Example</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- Proxima Nova font -->
+        <link rel="stylesheet" href="https://use.typekit.net/nuo0mcp.css">
 
-        <!-- Styles -->
-        <style>
-
-        </style>
+        <!-- Tailwind CSS styles -->
+        <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
     </head>
     <body>
-        Hello World!
+        <div class="p-4">
+            <div class="alert alert-success mb-2">
+                <span>Success</span>
+            </div>
+            Hello World!
+            <button class="btn btn-primary">Primary</button>
+        </div>
     </body>
 </html>

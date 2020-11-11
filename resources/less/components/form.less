@@ -1,0 +1,27 @@
+@layer components {
+  .form-control {
+    @apply block p-3 border border-solid border-gray-400 rounded;
+    @apply transition duration-150 ease-in-out;
+
+    &::placeholder {
+      @apply text-gray-500;
+    }
+
+    &:focus {
+      @apply border-blue-500 outline-none shadow-outline;
+    }
+
+    &:disabled,
+    [readonly] {
+      @apply bg-gray-200;
+    }
+
+    &.is-invalid {
+      @apply border-red-500;
+
+      &:focus {
+        @apply shadow-outline-red;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@layer components {
+  .btn {
+    @apply text-black font-semibold leading-6 border-2 border-solid border-transparent rounded-full;
+    @apply transition-colors duration-150 ease-in-out;
+    padding: calc(0.5rem - 2px) calc(2rem - 2px);
+
+    &:focus {
+      @apply outline-none;
+    }
+
+    /* Variants */
+    &-primary {
+      @apply bg-yellow-500;
+
+      &:hover,
+      &:focus {
+        @apply bg-yellow-600;
+      }
+    }
+
+    &-secondary {
+      @apply bg-black text-white;
+
+      &:hover,
+      &:focus {
+        @apply bg-gray-900;
+      }
+    }
+
+    &-light {
+      @apply bg-white text-black;
+
+      &:hover,
+      &:focus {
+        @apply bg-gray-200;
+      }
+    }
+
+    &-outline-primary {
+      @apply text-yellow-500 border-yellow-500;
+
+      &:hover,
+      &:focus {
+        @apply text-black bg-yellow-500;
+      }
+    }
+
+    &-outline-secondary {
+      @apply text-black border-black;
+
+      &:hover,
+      &:focus {
+        @apply text-white bg-black;
+      }
+    }
+
+    &-outline-light {
+      @apply text-white border-white;
+
+      &:hover,
+      &:focus {
+        @apply text-black bg-white;
+      }
+    }
+
+    /* Sizes */
+    &-sm {
+      @apply text-sm leading-4;
+    }
+
+    &-lg {
+      padding: calc(0.75rem - 2px) calc(4rem - 2px);
+    }
+
+    /* Squared */
+    &-squared {
+      @apply rounded;
+    }
+
+    /* Display */
+    &-block {
+      @apply block w-full;
+    }
+  }
+}
